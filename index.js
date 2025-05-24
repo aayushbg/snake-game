@@ -42,16 +42,18 @@ function moveSnake() {
     }
 }
 
-// Change direction randomly (for demo)
+// Change direction function in feature-direction-a
 function randomDirection() {
     const dirs = [
-        { x: 0, y: 1 },  // right
-        { x: 1, y: 0 },  // down
-        { x: 0, y: -1 }, // left
-        { x: -1, y: 0 }  // up
+        { x: 0, y: 1 },  // going right
+        { x: 1, y: 0 },  // going down
+        { x: 0, y: -1 }, // going left
+        { x: -1, y: 0 }  // going up
     ];
+    console.log("Feature A: Changing direction...");
     direction = dirs[Math.floor(Math.random() * dirs.length)];
 }
+
 
 // Main loop
 let steps = 0;
